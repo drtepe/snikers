@@ -1,0 +1,217 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+body{
+    background: #161616;
+    overflow: hidden;}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;}
+.container .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;}
+.container .header:before{
+    content: "ADIDAS";
+    position: absolute;
+    top:58%; left:54%;
+    color: rgba(180, 164, 164, 0,6);
+    font-size: 150px;
+    opacity: 0.1;
+    font-weight: bold;
+    letter-spacing: 5px;
+    z-index: -1;}
+.container .header i{
+    color: white;
+    cursor: pointer;}
+.container .header p{
+    color: white; 
+    font-weight: bold;
+    font-size: 25px;}
+    
+    
+.container .header i{color: white;
+    cursor: pointer; z-index: -2;}
+.container .header .logotwo{height: 5px;}
+.container .header .logo{
+    color: white;
+    cursor: pointer; 
+    display: flex;
+    align-items: center;} 
+.container .header .line{
+    background-color: white;
+    display: block;
+    width: 45px;
+    height: 2px;
+    margin-bottom: 3px;
+    margin-right: 4px;}
+    
+    /* row-section */
+.container .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    color: white;}
+
+.container .col-2{
+  flex-basis: 50%;
+  min-width:300px ;}
+
+.container .row .col-2 h1{
+    color: white;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bolder;
+    word-spacing: 3px;
+    margin: 25px 0;}
+
+.container .row .col-2 p{
+    color: white;
+    font-size: 14px;
+    line-height: 30px;}
+
+.container .row .col-2 .btn{
+    display: inline-block; 
+    text-decoration: none;
+    color: white;
+    padding: 8px 20px; 
+    background-color: red;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 45px;
+transition: 1s all ease;
+font-size: 15px;}
+.container .row .col-2 .btn:hover{background-color: #7a191b;}
+/* ring-section */
+.col-2 .ring img{width:100%;
+    max-width: 580px;}
+#circle-ring{padding-left: 130px;
+    padding-top: 60px;}
+.col-2 .ring{
+    position: relative;
+    width: 400px;
+    height: 400px;
+background: transparent;
+border: 3px solid #3c3c3c;
+border-radius: 50%;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+z-index: -1;}
+.col-2 .ring:before{
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+border-top: 3px solid yellow;
+border-right: 3px solid yellow;
+border-radius:50% ;
+z-index: -1;
+animation: returncircle 10s  linear infinite;
+}
+.col-2 .ring .circle{
+display: block;
+position: absolute;
+top: 50%;
+left: 50%;
+width: 50%;
+height: 4px;
+background: transparent;
+transform-origin: left;
+animation: return 10s linear infinite;
+z-index: -1;}
+.col-2 .ring .circle:before{ content:"";
+    position: absolute;
+    top: -6px;
+    right: -9px;
+    width: 16px;
+    height: 16px;
+    background-color:chocolate;
+    border-radius: 50%;
+    box-shadow: 0 0 20px chocolate;
+    }
+    .col-2 .ring-two{
+            position: absolute;
+            top:13%;
+            left: 56%;
+            width: 500px;
+            height: 500px;
+            background: transparent;
+            border: 3px solid #3c3c3c;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            z-index: -1;}  
+            .col-2 .ring-two:before{  content: "";
+                position: absolute;
+                top: -3px;
+                left: -3px;
+                width: 100%;
+                height: 100%;
+                border: 3px solid transparent;
+            border-bottom: 3px solid yellow;
+            border-left: 3px solid yellow;
+            border-radius:50% ;
+            z-index: -1;
+            animation: returncircle2 10s  linear infinite;
+                
+                }
+.col-2 .ring-two .circle-two{ 
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    background-color:transparent;
+    transform-origin: left;
+    animation: return2 10s  linear infinite;
+}
+.col-2 .ring-two .circle-two:before{ content:"";
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    width: 16px;
+    height: 16px;
+    background:chocolate;
+    border-radius: 50%;
+    box-shadow: 0 0 20px chocolate;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes returncircle{ 
+    0%{transform: rotate(0deg) ;}
+
+100%{transform: rotate(360deg);} 
+}
+
+@keyframes return{
+     0%{transform: rotate(45deg) ;}
+100%{transform: rotate(405deg);} }
+@keyframes returncircle2{ 
+    0%{transform: rotate(-45deg) ;}
+
+100%{transform: rotate(-405deg);} 
+}
+
+@keyframes return2{
+     0%{transform: rotate(0deg) ;}
+100%{transform: rotate(-360deg);} }
+
+
+
